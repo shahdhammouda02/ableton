@@ -62,9 +62,11 @@ const Footer = () => {
           </div>
         </div>
 
-  <div className="lg:col-span-2 text-xl">
-          <h3 className="text-xl sm:text-2xl md:text-2xl mb-4">Sign up to our newsletter</h3>
-          <p className="mb-4">
+        <div className="lg:col-span-2 text-xl md:transform md:translate-x-7">
+          <h3 className="text-xl sm:text-2xl md:text-2xl mb-4">
+            Sign up to our newsletter
+          </h3>
+          <p className="mb-4 max-w-[500px]">
             Enter your email address to stay up to date with the latest offers,
             tutorials, downloads, surveys and more.
           </p>
@@ -72,7 +74,7 @@ const Footer = () => {
             <Input
               type="email"
               placeholder="Email Address"
-              className="flex-grow rounded-r-none py-3 pr-40"
+              className="flex-grow rounded-r-none py-3 pr-12 sm:pr-12 md:pr-40"
               fullWidth={false}
             />
             <Button
@@ -98,7 +100,9 @@ const Footer = () => {
         </div>
 
         <div className="text-xl">
-          <h3 className="text-xl sm:text-2xl md:text-2xl mb-4">Language and Location</h3>
+          <h3 className="text-xl sm:text-2xl md:text-2xl mb-4">
+            Language and Location
+          </h3>
           <div className="flex gap-1">
             <select className="px-3 py-2 bg-gray-200 text-sm">
               <option>English</option>
@@ -109,7 +113,6 @@ const Footer = () => {
             </select>
           </div>
         </div>
-
       </div>
 
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center pt-6 mb-10">

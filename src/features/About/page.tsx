@@ -75,7 +75,8 @@ export const About = () => {
 
       <div className="relative w-full max-w-screen-5xl mx-auto mb-20 sm:mb-24 md:mb-30">
         <div className="flex flex-col md:flex-row gap-0 h-[400px] sm:h-[500px] md:h-[700px] lg:h-[800px] xl:h-[900px]">
-          <div className="flex-1 relative">
+          <div className="flex-1 relative md:block hidden">
+            {" "}
             <div className="absolute right-0 translate-x-1/7 top-1/2 -translate-y-1/2 w-[200px] h-[150px] sm:w-[250px] sm:h-[200px] md:w-[400px] md:h-[350px] lg:w-[500px] lg:h-[450px] xl:w-[600px] xl:h-[600px] z-10">
               <Image
                 src={photo1}
@@ -86,8 +87,17 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="flex-[1.3] bg-yellow-200 p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col justify-center items-center gap-6 sm:gap-8 md:gap-12 lg:gap-20 xl:gap-25 -mr-4 sm:-mr-6 md:-mr-8 lg:-mr-10">
-            <div className="relative w-[200px] h-[150px] sm:w-[250px] sm:h-[180px] md:w-[350px] md:h-[280px] lg:w-[450px] lg:h-[350px] xl:w-[500px] xl:h-[400px]">
+          <div className="flex-[1.3] bg-yellow-200 p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col justify-center items-center gap-6 sm:gap-8 md:gap-12 lg:gap-20 xl:gap-25 -mr-4 sm:-mr-6 md:-mr-8 lg:-mr-10 relative">
+            <div className="md:hidden absolute -top-15 left-1/2 -translate-x-1/2 w-[200px] h-[170px] sm:w-[250px] sm:h-[200px] z-10">
+              <Image
+                src={photo1}
+                alt="Ableton product"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            <div className="relative w-[200px] h-[150px] sm:w-[250px] sm:h-[180px] md:w-[350px] md:h-[280px] lg:w-[450px] lg:h-[350px] xl:w-[500px] xl:h-[400px] mt-20 sm:mt-24 md:mt-0">
               <Image
                 src={photo2}
                 alt="Ableton workspace"
@@ -133,10 +143,10 @@ export const About = () => {
           culture."
       />
 
-      <div className="relative w-full max-w-screen-5xl mx-auto mb-20 sm:mb-24 md:mb-30">
+      <div className="relative w-full max-w-screen-5xl mx-auto mb-32 sm:mb-24 md:mb-30 mt-16 sm:mt-0">
         <div className="flex flex-col md:flex-row gap-0 h-[400px] sm:h-[500px] md:h-[700px] lg:h-[800px] xl:h-[900px]">
-          <div className="flex-[1.3] bg-green-300 p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col justify-center items-center gap-6 sm:gap-8 md:gap-12 lg:gap-20 xl:gap-25 -ml-4 sm:-ml-6 md:-ml-8 lg:-ml-10">
-            <div className="relative w-[200px] h-[150px] sm:w-[250px] sm:h-[180px] md:w-[350px] md:h-[280px] lg:w-[450px] lg:h-[350px] xl:w-[500px] xl:h-[400px]">
+          <div className="flex-[1.3] bg-green-300 p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col justify-center items-center gap-6 sm:gap-8 md:gap-12 lg:gap-20 xl:gap-25 -ml-4 sm:-ml-6 md:-ml-8 lg:-ml-10 relative overflow-visible">
+            <div className="md:hidden absolute -top-12 left-1/2 -translate-x-1/2 w-[200px] h-[150px] sm:w-[250px] sm:h-[200px] z-10">
               <Image
                 src={photo3}
                 alt="Ableton workspace"
@@ -145,7 +155,34 @@ export const About = () => {
               />
             </div>
 
-            <div className="relative w-[200px] h-[150px] sm:w-[250px] sm:h-[180px] md:w-[350px] md:h-[280px] lg:w-[450px] lg:h-[350px] xl:w-[500px] xl:h-[400px]">
+            <div className="md:hidden relative w-[200px] h-[150px] sm:w-[250px] sm:h-[180px] z-20 mt-8 sm:mt-24">
+              <Image
+                src={photo4}
+                alt="Ableton team"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            <div className="md:hidden absolute -bottom-20 left-1/2 -translate-x-1/2 w-[200px] h-[150px] sm:w-[250px] sm:h-[200px] z-10">
+              <Image
+                src={photo5}
+                alt="Ableton product"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            <div className="hidden md:block relative w-[200px] h-[150px] sm:w-[250px] sm:h-[180px] md:w-[350px] md:h-[280px] lg:w-[450px] lg:h-[350px] xl:w-[500px] xl:h-[400px]">
+              <Image
+                src={photo3}
+                alt="Ableton workspace"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            <div className="hidden md:block relative w-[200px] h-[150px] sm:w-[250px] sm:h-[180px] md:w-[350px] md:h-[280px] lg:w-[450px] lg:h-[350px] xl:w-[500px] xl:h-[400px]">
               <Image
                 src={photo4}
                 alt="Ableton team"
@@ -155,7 +192,7 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="flex-1 relative">
+          <div className="flex-1 relative md:block hidden">
             <div className="absolute left-0 -translate-x-1/7 top-1/2 -translate-y-1/2 w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[400px] md:h-[350px] lg:w-[500px] lg:h-[400px] xl:w-[600px] xl:h-[500px] z-10">
               <Image
                 src={photo5}
@@ -205,11 +242,27 @@ export const About = () => {
       <div className="relative w-full max-w-screen-5xl mx-auto mb-12 sm:mb-14 md:mb-15">
         <div className="flex justify-center items-center h-[500px] sm:h-[650px] md:h-[800px] lg:h-[900px] xl:h-[1000px]">
           <div className="absolute w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[500px] lg:w-[700px] lg:h-[600px] xl:w-[900px] xl:h-[800px] bg-purple-300 z-0"></div>
-          <div className="absolute left-0 translate-x-[15%] top-1/2 -translate-y-1/2 w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[350px] md:h-[300px] lg:w-[400px] lg:h-[350px] xl:w-[500px] xl:h-[400px] z-10">
+
+          <div
+            className="absolute left-0 translate-x-[15%] top-1/2 -translate-y-1/2 w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[350px] md:h-[300px] lg:w-[400px] lg:h-[350px] xl:w-[500px] xl:h-[400px] z-10
+                  sm:left-0 sm:translate-x-[15%] sm:top-1/2 sm:-translate-y-1/2
+                  hidden sm:block"
+          >
             <Image src={photo6} alt="Photo 6" fill className="object-cover" />
           </div>
 
-          <div className="absolute right-0 top-1/2 translate-x-[6%] -translate-y-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] z-10">
+          <div
+            className="absolute right-0 top-1/2 translate-x-[6%] -translate-y-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] z-10
+                  sm:right-0 sm:top-1/2 sm:translate-x-[6%] sm:-translate-y-1/2
+                  hidden sm:block"
+          >
+            <Image src={photo7} alt="Photo 7" fill className="object-cover" />
+          </div>
+
+          <div className="sm:hidden absolute -top-2 left-1/2 -translate-x-1/2 w-[200px] h-[200px] z-10">
+            <Image src={photo6} alt="Photo 6" fill className="object-cover" />
+          </div>
+          <div className="sm:hidden absolute -bottom-0 left-1/2 -translate-x-1/2 w-[200px] h-[200px] z-10">
             <Image src={photo7} alt="Photo 7" fill className="object-cover" />
           </div>
         </div>

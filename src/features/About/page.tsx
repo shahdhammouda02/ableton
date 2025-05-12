@@ -110,11 +110,11 @@ export const About = () => {
       </div>
 
       <Paragraph
-        title="Making music isn't easy. It takes time, effort, and learning. But when
-          you're in the flow, it's incredibly rewarding."
+        title="Making music isn&apos;t easy. It takes time, effort, and learning. But when
+you&apos;re in the flow, it&apos;s incredibly rewarding."
         description="We feel the same way about making Ableton products. The driving force
-          behind Ableton is our passion for what we make, and the people we make
-          it for."
+behind Ableton is our passion for what we make, and the people we make
+it for."
       />
 
       <div className="max-w-3xl mx-auto mb-20 sm:mb-24 md:mb-30 text-left">
@@ -132,8 +132,8 @@ export const About = () => {
 
       <Paragraph
         title="We are more than 350 people from 30 different countries divided
-          between our headquarters in Berlin and our offices in Los Angeles and
-          Tokyo."
+between our headquarters in Berlin and our offices in Los Angeles and
+Tokyo."
         description="Most of us are active musicians, producers, and DJs, and many of us
           use Live and Push every day. We come from a wide range of cultural and
           professional backgrounds. Some of us have PhDs, some are self-taught,
@@ -295,8 +295,8 @@ export const About = () => {
         <div className="w-full md:w-1/2 bg-blue-300 h-[250px] sm:h-[350px] md:h-[450px] lg:h-[550px] xl:h-[600px] flex flex-col items-center justify-center p-6 sm:p-8 md:p-10 lg:p-12 text-left">
           <div className="max-w-md">
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-5 md:mb-6 text-black">
-              We're really proud of the work we've done so far. But there's so
-              much more to come. If you'd like to be a part of it, please join
+              We&apos;re really proud of the work we&lsquo;ve done so far. But there&#39;s so
+              much more to come. If you&rsquo;d like to be a part of it, please join
               us.
             </p>
             <a

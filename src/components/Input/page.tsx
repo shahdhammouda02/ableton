@@ -46,9 +46,12 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           {...rest}
           className={inputClasses}
         />
+        {error && (
+          <p className="mt-1 text-sm text-red-600">This field is required</p>
+        )}
       </div>
     );
   }
 );
-
+Input.displayName = "Input";
 export default Input;

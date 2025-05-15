@@ -27,6 +27,9 @@ export const About = () => {
         <a href="/apprenticeships" className="text-black text-lg sm:text-xl">
           Apprenticeships
         </a>
+        <a href="/posts" className="text-black text-lg sm:text-xl">
+          Posts
+        </a>
       </div>
 
       <div className="relative w-full flex justify-center items-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
